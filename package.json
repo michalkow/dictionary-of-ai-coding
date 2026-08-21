@@ -1,10 +1,5 @@
 {
   "name": "ai-coding-dictionary",
   "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "start": "mkdocs serve",
-    "build": "mkdocs build",
-    "deploy": "mkdocs gh-deploy"
-  }
+  "type": "module"
 }
