@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Design concept - michalkow-skills</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Design concept";
+        var mkdocs_page_input_path = "Design concept.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> michalkow-skills
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Dictionary</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../AFK/">AFK</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AGENTS.md/">AGENTS.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AI/">AI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AX/">AX</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Agent/">Agent</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Agent%20mode/">Agent mode</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Attention%20budget/">Attention budget</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Attention%20degradation/">Attention degradation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Attention%20relationship/">Attention relationship</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Autocompact/">Autocompact</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Automated%20check/">Automated check</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Automated%20review/">Automated review</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Cache%20tokens/">Cache tokens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Clearing/">Clearing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Compaction/">Compaction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Context/">Context</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Context%20pointer/">Context pointer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Context%20window/">Context window</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Contextual%20knowledge/">Contextual knowledge</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DX/">DX</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Design concept</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Effort/">Effort</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Environment/">Environment</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Filesystem/">Filesystem</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Grilling/">Grilling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Hallucination/">Hallucination</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Handoff/">Handoff</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Handoff%20artifact/">Handoff artifact</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Harness/">Harness</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Human%20review/">Human review</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Human-in-the-loop/">Human-in-the-loop</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Inference/">Inference</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Input%20tokens/">Input tokens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Knowledge%20cutoff/">Knowledge cutoff</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCP/">MCP</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Memory%20system/">Memory system</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Model/">Model</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Model%20provider/">Model provider</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Model%20provider%20request/">Model provider request</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Next-token%20prediction/">Next-token prediction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Non-determinism/">Non-determinism</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Output%20tokens/">Output tokens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Parameters/">Parameters</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Parametric%20knowledge/">Parametric knowledge</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Permission%20mode/">Permission mode</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Permission%20request/">Permission request</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Prefix%20cache/">Prefix cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Primary%20source/">Primary source</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Progressive%20disclosure/">Progressive disclosure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Prototyping/">Prototyping</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Sandbox/">Sandbox</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Secondary%20source/">Secondary source</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Session/">Session</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Skill/">Skill</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Smart%20zone/">Smart zone</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Spec/">Spec</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Stateful/">Stateful</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Stateless/">Stateless</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Subagent/">Subagent</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Sycophancy/">Sycophancy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../System%20prompt/">System prompt</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ticket/">Ticket</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Token/">Token</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Tool/">Tool</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Tool%20call/">Tool call</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Tool%20result/">Tool result</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Training/">Training</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Turn/">Turn</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Vibe%20coding/">Vibe coding</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">michalkow-skills</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Dictionary</li>
+      <li class="breadcrumb-item active">Design concept</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/michalkow/skills/edit/master/docs/Design concept.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>The shared understanding of what's being built, held in common between user and <a href="../Agent/">agent</a> but separate from any asset. Brooks' term (<em>The Design of Design</em>): the conversation, <a href="../Handoff%20artifact/">handoff artifacts</a>, and the code are all assets that try to capture or reach the design concept, but none of them <em>are</em> it. Quality of the design concept is felt through the quality of the conversation that built it.</p>
+<p>The term names the gap behind a familiar frustration: the agent writes exactly what you asked for and it's still wrong. The usual cause is that you hadn't fully figured out what you wanted. The design concept wasn't finished in your own head — your prompt captured the parts you'd worked out, and was silent on the parts you hadn't. The agent filled those silences with its own assumptions, because there was nothing to align with. Nothing malfunctioned. There was no shared design concept, because there wasn't yet a whole one to share.</p>
+<p>You can tell a design concept is shared the same way you can with a colleague: the other party starts answering questions you haven't asked yet the way you would. Until then, the work is conversation — <a href="../Grilling/">grilling</a> is the deliberate version — and writing a <a href="../Spec/">spec</a> too early just captures the misalignment in a more durable asset. The design concept also moves as you learn; assets lag it, which is why a spec faithful to last week's understanding can still mislead this week's session.</p>
+<p><em>Usage:</em></p>
+<p>"It's writing exactly what I asked for and it's still wrong."</p>
+<p>"You don't share a design concept yet — it's filling gaps with assumptions. Keep talking until cancellation, refunds, and partial fulfilment all line up between you before you let it write a spec."</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../DX/" class="btn btn-neutral float-left" title="DX"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Effort/" class="btn btn-neutral float-right" title="Effort">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/michalkow/skills" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../DX/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Effort/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

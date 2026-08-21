@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Non-determinism - michalkow-skills</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Non-determinism";
+        var mkdocs_page_input_path = "Non-determinism.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> michalkow-skills
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Dictionary</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../AFK/">AFK</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AGENTS.md/">AGENTS.md</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AI/">AI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AX/">AX</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Agent/">Agent</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Agent%20mode/">Agent mode</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Attention%20budget/">Attention budget</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Attention%20degradation/">Attention degradation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Attention%20relationship/">Attention relationship</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Autocompact/">Autocompact</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Automated%20check/">Automated check</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Automated%20review/">Automated review</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Cache%20tokens/">Cache tokens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Clearing/">Clearing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Compaction/">Compaction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Context/">Context</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Context%20pointer/">Context pointer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Context%20window/">Context window</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Contextual%20knowledge/">Contextual knowledge</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DX/">DX</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Design%20concept/">Design concept</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Effort/">Effort</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Environment/">Environment</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Filesystem/">Filesystem</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Grilling/">Grilling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Hallucination/">Hallucination</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Handoff/">Handoff</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Handoff%20artifact/">Handoff artifact</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Harness/">Harness</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Human%20review/">Human review</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Human-in-the-loop/">Human-in-the-loop</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Inference/">Inference</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Input%20tokens/">Input tokens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Knowledge%20cutoff/">Knowledge cutoff</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MCP/">MCP</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Memory%20system/">Memory system</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Model/">Model</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Model%20provider/">Model provider</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Model%20provider%20request/">Model provider request</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Next-token%20prediction/">Next-token prediction</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Non-determinism</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Output%20tokens/">Output tokens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Parameters/">Parameters</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Parametric%20knowledge/">Parametric knowledge</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Permission%20mode/">Permission mode</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Permission%20request/">Permission request</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Prefix%20cache/">Prefix cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Primary%20source/">Primary source</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Progressive%20disclosure/">Progressive disclosure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Prototyping/">Prototyping</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Sandbox/">Sandbox</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Secondary%20source/">Secondary source</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Session/">Session</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Skill/">Skill</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Smart%20zone/">Smart zone</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Spec/">Spec</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Stateful/">Stateful</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Stateless/">Stateless</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Subagent/">Subagent</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Sycophancy/">Sycophancy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../System%20prompt/">System prompt</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ticket/">Ticket</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Token/">Token</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Tool/">Tool</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Tool%20call/">Tool call</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Tool%20result/">Tool result</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Training/">Training</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Turn/">Turn</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Vibe%20coding/">Vibe coding</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">michalkow-skills</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Dictionary</li>
+      <li class="breadcrumb-item active">Non-determinism</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/michalkow/skills/edit/master/docs/Non-determinism.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>The same input can produce different output. Run a <a href="../Model/">model</a> twice with identical <a href="../Context/">context</a> and you may get two different answers — sometimes a word, sometimes a completely different approach. Nothing in your code has to change for this to happen.</p>
+<p>It's a property of how models generate text, and how <a href="../Model%20provider/">model providers</a> serve <a href="../Model%20provider%20request/">requests</a>. During <a href="../Inference/">inference</a>, the model produces a probability distribution over possible next <a href="../Token/">tokens</a> and one is sampled from it — usually with some randomness on purpose, since always picking the most likely token produces repetitive, lower-quality text. One differently-sampled token early in a response changes every token after it, which is how a single different word becomes a completely different approach. Provider-side serving adds more variation on top: requests are batched together on shared hardware, and tiny floating-point differences between batches can tip a close call between two tokens. There's no setting you can flip to make it all go away.</p>
+<p>Expect a spread of results from an <a href="../Agent/">agent</a> on the same task. Most responses fall within a reasonable bell curve of quality — that's why the non-determinism is tolerable at all — but the tails are real: some days the model will feel sharp; some days it'll feel like it's lost the plot. Same task, different rolls of the dice. This has two practical consequences. Retrying is a legitimate strategy: a failed attempt is one draw from the distribution, and a fresh attempt at the same task may simply land better. And verification matters more than it would with deterministic tools — you can't test an agent's behaviour once and rely on it repeating, so <a href="../Automated%20check/">automated checks</a> have to catch the bad draws.</p>
+<p>Be careful not to over-narrativize this. Humans are pattern-matching machines, and a string of bad runs can feel like proof that "the model got worse this week." Usually it's just the distribution.</p>
+<p><em>Usage:</em></p>
+<p>"Claude has been awful today. Did they ship a worse version?"</p>
+<p>"Probably not — model output is non-deterministic. You're going to have good days and bad days on the same task. Try again tomorrow before you go looking for a cause."</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Next-token%20prediction/" class="btn btn-neutral float-left" title="Next-token prediction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Output%20tokens/" class="btn btn-neutral float-right" title="Output tokens">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/michalkow/skills" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../Next-token%20prediction/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Output%20tokens/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
