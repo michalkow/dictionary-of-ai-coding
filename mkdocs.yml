@@ -1,0 +1,78 @@
+site_name: michalkow-skills
+site_description: Agent skills for real engineering — not vibe coding.
+repo_url: https://github.com/michalkow/skills
+docs_dir: docs
+
+nav:
+  - Home: index.md
+  - Dictionary:
+      - AFK: AFK.md
+      - AGENTS.md: AGENTS.md.md
+      - AI: AI.md
+      - AX: AX.md
+      - Agent: Agent.md
+      - Agent mode: Agent mode.md
+      - Attention budget: Attention budget.md
+      - Attention degradation: Attention degradation.md
+      - Attention relationship: Attention relationship.md
+      - Autocompact: Autocompact.md
+      - Automated check: Automated check.md
+      - Automated review: Automated review.md
+      - Cache tokens: Cache tokens.md
+      - Clearing: Clearing.md
+      - Compaction: Compaction.md
+      - Context: Context.md
+      - Context pointer: Context pointer.md
+      - Context window: Context window.md
+      - Contextual knowledge: Contextual knowledge.md
+      - DX: DX.md
+      - Design concept: Design concept.md
+      - Effort: Effort.md
+      - Environment: Environment.md
+      - Filesystem: Filesystem.md
+      - Grilling: Grilling.md
+      - Hallucination: Hallucination.md
+      - Handoff: Handoff.md
+      - Handoff artifact: Handoff artifact.md
+      - Harness: Harness.md
+      - Human review: Human review.md
+      - Human-in-the-loop: Human-in-the-loop.md
+      - Inference: Inference.md
+      - Input tokens: Input tokens.md
+      - Knowledge cutoff: Knowledge cutoff.md
+      - MCP: MCP.md
+      - Memory system: Memory system.md
+      - Model: Model.md
+      - Model provider: Model provider.md
+      - Model provider request: Model provider request.md
+      - Next-token prediction: Next-token prediction.md
+      - Non-determinism: Non-determinism.md
+      - Output tokens: Output tokens.md
+      - Parameters: Parameters.md
+      - Parametric knowledge: Parametric knowledge.md
+      - Permission mode: Permission mode.md
+      - Permission request: Permission request.md
+      - Prefix cache: Prefix cache.md
+      - Primary source: Primary source.md
+      - Progressive disclosure: Progressive disclosure.md
+      - Prototyping: Prototyping.md
+      - Sandbox: Sandbox.md
+      - Secondary source: Secondary source.md
+      - Session: Session.md
+      - Skill: Skill.md
+      - Smart zone: Smart zone.md
+      - Spec: Spec.md
+      - Stateful: Stateful.md
+      - Stateless: Stateless.md
+      - Subagent: Subagent.md
+      - Sycophancy: Sycophancy.md
+      - System prompt: System prompt.md
+      - Ticket: Ticket.md
+      - Token: Token.md
+      - Tool: Tool.md
+      - Tool call: Tool call.md
+      - Tool result: Tool result.md
+      - Training: Training.md
+      - Turn: Turn.md
+      - Vibe coding: Vibe coding.md
+theme: readthedocs

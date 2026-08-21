@@ -1,19 +1,3 @@
-<!--
-  GENERATED FILE — DO NOT EDIT.
-  Source: dictionary/*.md, internal/Curriculum.md, internal/README.template.md
-  Regenerate: npm run generate
--->
-
-<p>
-  <a href="https://aicodingdictionary.com">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://res.cloudinary.com/total-typescript/image/upload/v1782821584/dictionary-dark.png">
-      <source media="(prefers-color-scheme: light)" srcset="https://res.cloudinary.com/total-typescript/image/upload/v1782821584/dictionary-light.png">
-      <img alt="AI Coding Dictionary" src="https://res.cloudinary.com/total-typescript/image/upload/v1782821584/dictionary-light.png" width="369">
-    </picture>
-  </a>
-</p>
-
 # AI Coding Dictionary
 
 **AI coding can feel like it's just for experts**. Unexplained jargon. Mysterious failures. Bills that don't seem to match the work.
